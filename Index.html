@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ImgHub</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#111;
+color:white;
+}
+
+header{
+text-align:center;
+padding:20px;
+font-size:32px;
+font-weight:bold;
+letter-spacing:2px;
+background:#000;
+border-bottom:1px solid #333;
+}
+
+.search{
+display:flex;
+justify-content:center;
+margin:20px;
+}
+
+.search input{
+width:60%;
+padding:10px;
+border-radius:20px;
+border:none;
+font-size:16px;
+}
+
+.gallery{
+column-count:4;
+column-gap:10px;
+padding:10px;
+}
+
+.gallery img{
+width:100%;
+margin-bottom:10px;
+border-radius:12px;
+break-inside:avoid;
+transition:transform .3s;
+cursor:pointer;
+}
+
+.gallery img:hover{
+transform:scale(1.03);
+}
+
+@media(max-width:1000px){
+.gallery{column-count:3;}
+}
+
+@media(max-width:700px){
+.gallery{column-count:2;}
+}
+
+@media(max-width:500px){
+.gallery{column-count:1;}
+}
+
+footer{
+text-align:center;
+padding:20px;
+color:#aaa;
+font-size:14px;
+border-top:1px solid #333;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+ImgHub
+</header>
+
+<div class="search">
+<input type="text" placeholder="Search images...">
+</div>
+
+<div class="gallery">
+
+<img src="https://picsum.photos/400/600">
+<img src="https://picsum.photos/500/700">
+<img src="https://picsum.photos/400/500">
+<img src="https://picsum.photos/500/600">
+<img src="https://picsum.photos/400/700">
+<img src="https://picsum.photos/500/800">
+<img src="https://picsum.photos/450/600">
+<img src="https://picsum.photos/450/700">
+<img src="https://picsum.photos/500/650">
+<img src="https://picsum.photos/450/750">
+<img src="https://picsum.photos/500/900">
+<img src="https://picsum.photos/420/620">
+
+</div>
+
+<footer>
+© ImgHub
+</footer>
+
+</body>
+</html>
